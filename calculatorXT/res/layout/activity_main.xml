@@ -1,0 +1,446 @@
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AbsoluteLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.calculatorxt.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="10dp"
+        android:text="CASIO"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="80dp"
+        android:layout_y="16dp"
+        android:text="SCIENTIFIC CALCULATOR"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="230dp"
+        android:layout_y="12dp"
+        android:text="fx-570ES"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="247dp"
+        android:layout_height="35dp"
+        android:layout_x="23dp"
+        android:layout_y="86dp"
+        android:background="#DDDDDD"
+        android:gravity="right"
+        android:ems="10" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_x="5dp"
+        android:layout_y="235dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false" >
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:onClick="show"
+                android:text="sin("
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="show"
+                android:text="*"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="show"
+                android:text="7"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="show"
+                android:text="8"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="show"
+                android:text="9"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:onClick="del"
+                android:text="DEL"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:onClick="reset"
+                android:text="AC"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false" >
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:onClick="show"
+                android:text="cos("
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="show"
+                android:text="/"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="show"
+                android:text="4"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="show"
+                android:text="5"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="show"
+                android:text="6"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:onClick="show"
+                android:text="10^"
+                android:textAllCaps="true"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:onClick="show"
+                android:text="%"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false" >
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:onClick="show"
+                android:text="tan("
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="show"
+                android:text="+"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button23"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="show"
+                android:text="1"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button24"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="show"
+                android:text="2"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button25"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="show"
+                android:text="3"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button26"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:onClick="show"
+                android:text="!"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/button27"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:onClick="show"
+                android:text="^"
+                android:textAlignment="center"
+                android:textSize="11dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false" >
+
+            <Button
+                android:id="@+id/button28"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:onClick="show"
+                android:text="Cotg("
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/button29"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="show"
+                android:text="-"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button30"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="show"
+                android:text="."
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button31"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="show"
+                android:text="0"
+                android:textSize="11dp" />
+
+            <Button
+                android:id="@+id/button32"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:onClick="show"
+                android:text="e" />
+
+            <Button
+                android:id="@+id/button33"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:onClick="ans"
+                android:text="ans"
+                android:textSize="10dp" />
+
+            <Button
+                android:id="@+id/button34"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:text="="
+                android:onClick="cal"
+                android:textSize="20dp" />
+        </TableRow>
+    </TableLayout>
+
+ <LinearLayout
+     android:id="@+id/linearLayout1"
+     android:layout_width="250dp"
+     android:layout_height="wrap_content"
+     android:layout_x="20dp"
+     android:layout_y="180dp"
+     android:orientation="horizontal" >
+
+     <Button
+         android:id="@+id/buttonmo"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:onClick="show"
+         android:text="(" />
+     
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:onClick="show"
+         android:text="A" />
+
+     <Button
+         android:id="@+id/button3"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:onClick="show"
+         android:text="B" />
+
+     <Button
+         android:id="@+id/button2"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:onClick="show"
+         android:text="C" />
+
+     <Button
+         android:id="@+id/button4"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:onClick="show"
+         android:text="D" />
+
+     <Button
+         android:id="@+id/button5"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:onClick="show"
+         android:text="E" />
+
+     <Button
+         android:id="@+id/button6"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:onClick="show"
+         android:text="F" />
+     <Button
+         android:id="@+id/buttondong"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:onClick="show"
+         android:text=")" />
+ </LinearLayout>
+
+ <TextView
+     android:id="@+id/editText1"
+        android:layout_width="247dp"
+        android:layout_height="35dp"
+        android:layout_x="23dp"
+        android:layout_y="50dp"
+        android:background="#DDDDDD"
+        android:gravity="left" />
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_x="23dp"
+     android:layout_y="130dp" >
+
+     <Button
+         android:id="@+id/button35"
+         android:layout_width="60dp"
+         android:layout_height="wrap_content"
+         android:onClick="choncoso1"
+         android:text="dex" />
+
+     <Button
+         android:id="@+id/button36"
+         android:layout_width="60dp"
+         android:layout_height="wrap_content"
+         android:onClick="choncoso2"
+         android:text="hex" />
+
+     <Button
+         android:id="@+id/button37"
+         android:layout_width="60dp"
+         android:layout_height="wrap_content"
+         android:onClick="choncoso3"
+         android:text="oct" />
+
+     <Button
+         android:id="@+id/button38"
+         android:layout_width="60dp"
+         android:layout_height="wrap_content"
+         android:onClick="choncoso4"
+         android:text="bin" />
+ </LinearLayout>
+
+</AbsoluteLayout>
