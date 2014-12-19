@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maytinh1.FXMLDocumentController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="568.0" prefWidth="414.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="casio" layoutX="47.0" layoutY="19.0" text="CASIO">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="maytinh" layoutX="174.0" layoutY="24.0" text="SCIENTIFIC CALCULATOR">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="ES" layoutX="310.0" layoutY="24.0" text="fx-570ES">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="23.0" layoutY="354.0" prefHeight="189.0" prefWidth="368.0">
+               <children>
+                  <Button fx:id="Bmu" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="^" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                  <Button fx:id="tru" alignment="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="-" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="e" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="3" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="6" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="9" GridPane.columnIndex="4">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </Button>
+                  <Button fx:id="phay" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="2" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="5" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="8" GridPane.columnIndex="3">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="1" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="4" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </Button>
+                  <Button fx:id="bang" mnemonicParsing="false" onAction="#ketqua" prefHeight="40.0" prefWidth="50.0" text="=" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#xoabo" prefHeight="40.0" prefWidth="50.0" text="AC" GridPane.columnIndex="6" />
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="7" GridPane.columnIndex="2">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </Button>
+                  <Button fx:id="nhan" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="*" GridPane.columnIndex="1" />
+                  <Button fx:id="chia" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="/" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="cong" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="+" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="buttonso" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <effect>
+                        <SepiaTone />
+                     </effect>
+                  </Button>
+                  <Button fx:id="Bgt" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="!" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                  <Button fx:id="nhan1" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="and" />
+                  <Button fx:id="nhan6" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="not" GridPane.rowIndex="3" />
+                  <Button fx:id="nhan7" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="xor" GridPane.rowIndex="2" />
+                  <Button fx:id="nhan8" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="or" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#del" prefHeight="40.0" prefWidth="50.0" text="DEL" GridPane.columnIndex="5" />
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="10^" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#xoabo" prefHeight="40.0" prefWidth="50.0" text="ans" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="50.0" text="\%" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <TextField fx:id="n2" alignment="BOTTOM_RIGHT" disable="true" editable="false" layoutX="47.0" layoutY="94.0" prefHeight="40.0" prefWidth="320.0" />
+            <SplitMenuButton layoutX="23.0" layoutY="309.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="145.0" text="EQUATION">
+               <items>
+                  <MenuItem fx:id="flag1" mnemonicParsing="false" onAction="#pt" text="1: aX + b =0" />
+                  <MenuItem fx:id="flag2" mnemonicParsing="false" onAction="#pt" text="2: aX^2 + bX + c=0" />
+                  <MenuItem fx:id="flag3" mnemonicParsing="false" onAction="#pt" text="3: aX^3 + bX^2 + cX + d=0" />
+                  <MenuItem fx:id="flag4" mnemonicParsing="false" onAction="#pt" text="4: aX^4 + bX*2 + c=0" />
+               </items>
+            </SplitMenuButton>
+            <MenuButton layoutX="253.0" layoutY="309.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="138.0" text="DISEUQATION">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="1: aX + b &gt;0" />
+                  <MenuItem mnemonicParsing="false" text="2: aX^2 + bX + c&gt;0" />
+                  <MenuItem mnemonicParsing="false" text="3: aX^3 + bX^2 + cX + d&gt;0" />
+                  <MenuItem mnemonicParsing="false" text="4: aX^4 + bX*2 + c&gt;0" />
+               </items>
+            </MenuButton>
+            <GridPane layoutX="17.0" layoutY="142.0" prefHeight="110.0" prefWidth="125.0" AnchorPane.bottomAnchor="316.0" AnchorPane.topAnchor="142.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="47.0" text=")" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="47.0" text="cos" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="47.0" text="(" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="47.0" text="sin" GridPane.rowIndex="1" />
+                  <RadioButton fx:id="sixteen" mnemonicParsing="false" text="hex">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="luachon" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="ten" mnemonicParsing="false" text="dec" toggleGroup="$luachon" GridPane.columnIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane layoutX="273.0" layoutY="142.0" prefHeight="110.0" prefWidth="125.0" AnchorPane.bottomAnchor="316.0" AnchorPane.leftAnchor="273.0" AnchorPane.topAnchor="142.0">
+               <children>
+                  <Button mnemonicParsing="false" prefWidth="47.0" text="ln" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="47.0" text="Cotg" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button mnemonicParsing="false" prefWidth="47.0" text="log" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="47.0" text="tan" GridPane.rowIndex="1" />
+                  <RadioButton fx:id="eight" mnemonicParsing="false" text="oct" toggleGroup="$luachon" />
+                  <RadioButton fx:id="two" mnemonicParsing="false" text="bin" toggleGroup="$luachon" GridPane.columnIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="69.0" minWidth="10.0" prefWidth="69.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="69.0" minWidth="10.0" prefWidth="69.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <GridPane layoutX="17.0" layoutY="263.0" prefHeight="30.0" prefWidth="380.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="47.0" text="A" GridPane.halignment="CENTER" />
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="47.0" text="B" GridPane.columnIndex="1" />
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="47.0" text="C" GridPane.columnIndex="2" />
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="47.0" text="D" GridPane.columnIndex="3" />
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="47.0" text="F" GridPane.columnIndex="5" />
+                  <Button mnemonicParsing="false" onAction="#handleButtonAction" prefWidth="47.0" text="E" GridPane.columnIndex="4" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <Button layoutX="188.0" layoutY="309.0" mnemonicParsing="false" onAction="#giaipt" prefHeight="25.0" prefWidth="38.0" text="ok" />
+            <TextArea fx:id="n" layoutX="47.0" layoutY="54.0"  prefHeight="40.0" prefWidth="320.0" />
+           
+            <ImageView fitHeight="58.0" fitWidth="54.0" layoutX="180.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="ve" layoutX="141.0" layoutY="221.0" mnemonicParsing="false" onAction="#vedothi" prefHeight="25.0" prefWidth="132.0" text="draw math function" />
+            <ImageView fitHeight="70.0" fitWidth="78.0" layoutX="168.0" layoutY="142.0">
+               <image>
+                  <Image url="@../../tải%20xuống.png" />
+               </image>
+               <viewport>
+                  <Rectangle2D width="40.0" />
+               </viewport>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
